@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface DateConverter : NSObject
++ (NSString *)convertDateToString:(NSDate *)date withFormat:(NSString *)format;
 
 @end

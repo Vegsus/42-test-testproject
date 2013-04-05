@@ -16,8 +16,20 @@
 		7CB789D6170E1E4600036D9E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CB789D5170E1E4600036D9E /* Default.png */; };
 		7CB789D8170E1E4600036D9E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CB789D7170E1E4600036D9E /* Default@2x.png */; };
 		7CB789DA170E1E4600036D9E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CB789D9170E1E4600036D9E /* Default-568h@2x.png */; };
-		7CB789DD170E1E4700036D9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB789DC170E1E4700036D9E /* ViewController.m */; };
-		7CB789E0170E1E4700036D9E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CB789DE170E1E4700036D9E /* ViewController.xib */; };
+		7CB789E9170E246E00036D9E /* DBEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB789E8170E246E00036D9E /* DBEngine.m */; };
+		7CB789EC170E248E00036D9E /* UserItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB789EB170E248E00036D9E /* UserItem.m */; };
+		7CB789EF170E265A00036D9E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB789EE170E265A00036D9E /* libsqlite3.dylib */; };
+		7CB789F3170E298D00036D9E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB789F1170E298D00036D9E /* MainViewController.m */; };
+		7CB789F4170E298D00036D9E /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CB789F2170E298D00036D9E /* MainViewController.xib */; };
+		7CB78A01170E329A00036D9E /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB789FF170E329900036D9E /* SecondViewController.m */; };
+		7CB78A02170E329A00036D9E /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CB78A00170E329A00036D9E /* SecondViewController.xib */; };
+		7CB78A06170E444200036D9E /* TextEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB78A04170E444100036D9E /* TextEditorViewController.m */; };
+		7CB78A07170E444200036D9E /* TextEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CB78A05170E444200036D9E /* TextEditorViewController.xib */; };
+		7CB78A0B170E446600036D9E /* DateEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB78A09170E446300036D9E /* DateEditorViewController.m */; };
+		7CB78A0C170E446600036D9E /* DateEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CB78A0A170E446500036D9E /* DateEditorViewController.xib */; };
+		7CB78A10170E4C9C00036D9E /* DateConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB78A0F170E4C9C00036D9E /* DateConverter.m */; };
+		7CB78A12170E618700036D9E /* database.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7CB78A11170E618700036D9E /* database.sqlite */; };
+		7CB78A14170E691400036D9E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB78A13170E691200036D9E /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +46,28 @@
 		7CB789D5170E1E4600036D9E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		7CB789D7170E1E4600036D9E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		7CB789D9170E1E4600036D9E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		7CB789DB170E1E4700036D9E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7CB789DC170E1E4700036D9E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7CB789DF170E1E4700036D9E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		7CB789E7170E246E00036D9E /* DBEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBEngine.h; sourceTree = "<group>"; };
+		7CB789E8170E246E00036D9E /* DBEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBEngine.m; sourceTree = "<group>"; };
+		7CB789EA170E248E00036D9E /* UserItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserItem.h; sourceTree = "<group>"; };
+		7CB789EB170E248E00036D9E /* UserItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserItem.m; sourceTree = "<group>"; };
+		7CB789ED170E251100036D9E /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		7CB789EE170E265A00036D9E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		7CB789F0170E298C00036D9E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		7CB789F1170E298D00036D9E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		7CB789F2170E298D00036D9E /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		7CB789FE170E329900036D9E /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		7CB789FF170E329900036D9E /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		7CB78A00170E329A00036D9E /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		7CB78A03170E444000036D9E /* TextEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextEditorViewController.h; sourceTree = "<group>"; };
+		7CB78A04170E444100036D9E /* TextEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextEditorViewController.m; sourceTree = "<group>"; };
+		7CB78A05170E444200036D9E /* TextEditorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextEditorViewController.xib; sourceTree = "<group>"; };
+		7CB78A08170E446200036D9E /* DateEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateEditorViewController.h; sourceTree = "<group>"; };
+		7CB78A09170E446300036D9E /* DateEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateEditorViewController.m; sourceTree = "<group>"; };
+		7CB78A0A170E446500036D9E /* DateEditorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateEditorViewController.xib; sourceTree = "<group>"; };
+		7CB78A0E170E4C9C00036D9E /* DateConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateConverter.h; sourceTree = "<group>"; };
+		7CB78A0F170E4C9C00036D9E /* DateConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateConverter.m; sourceTree = "<group>"; };
+		7CB78A11170E618700036D9E /* database.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = database.sqlite; sourceTree = SOURCE_ROOT; };
+		7CB78A13170E691200036D9E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CB78A14170E691400036D9E /* QuartzCore.framework in Frameworks */,
+				7CB789EF170E265A00036D9E /* libsqlite3.dylib in Frameworks */,
 				7CB789C4170E1E4600036D9E /* UIKit.framework in Frameworks */,
 				7CB789C6170E1E4600036D9E /* Foundation.framework in Frameworks */,
 				7CB789C8170E1E4600036D9E /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +106,8 @@
 		7CB789C2170E1E4600036D9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7CB789EE170E265A00036D9E /* libsqlite3.dylib */,
+				7CB78A13170E691200036D9E /* QuartzCore.framework */,
 				7CB789C3170E1E4600036D9E /* UIKit.framework */,
 				7CB789C5170E1E4600036D9E /* Foundation.framework */,
 				7CB789C7170E1E4600036D9E /* CoreGraphics.framework */,
@@ -83,11 +118,23 @@
 		7CB789C9170E1E4600036D9E /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				7CB78A0D170E4C7E00036D9E /* Helpers */,
+				7CB789E6170E1F2200036D9E /* Database */,
 				7CB789D2170E1E4600036D9E /* AppDelegate.h */,
 				7CB789D3170E1E4600036D9E /* AppDelegate.m */,
-				7CB789DB170E1E4700036D9E /* ViewController.h */,
-				7CB789DC170E1E4700036D9E /* ViewController.m */,
-				7CB789DE170E1E4700036D9E /* ViewController.xib */,
+				7CB789F0170E298C00036D9E /* MainViewController.h */,
+				7CB789F1170E298D00036D9E /* MainViewController.m */,
+				7CB789F2170E298D00036D9E /* MainViewController.xib */,
+				7CB789FE170E329900036D9E /* SecondViewController.h */,
+				7CB789FF170E329900036D9E /* SecondViewController.m */,
+				7CB78A00170E329A00036D9E /* SecondViewController.xib */,
+				7CB78A03170E444000036D9E /* TextEditorViewController.h */,
+				7CB78A04170E444100036D9E /* TextEditorViewController.m */,
+				7CB78A05170E444200036D9E /* TextEditorViewController.xib */,
+				7CB78A08170E446200036D9E /* DateEditorViewController.h */,
+				7CB78A09170E446300036D9E /* DateEditorViewController.m */,
+				7CB78A0A170E446500036D9E /* DateEditorViewController.xib */,
+				7CB789ED170E251100036D9E /* Const.h */,
 				7CB789CA170E1E4600036D9E /* Supporting Files */,
 			);
 			path = TestApp;
@@ -96,6 +143,7 @@
 		7CB789CA170E1E4600036D9E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7CB78A11170E618700036D9E /* database.sqlite */,
 				7CB789CB170E1E4600036D9E /* TestApp-Info.plist */,
 				7CB789CC170E1E4600036D9E /* InfoPlist.strings */,
 				7CB789CF170E1E4600036D9E /* main.m */,
@@ -105,6 +153,26 @@
 				7CB789D9170E1E4600036D9E /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CB789E6170E1F2200036D9E /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				7CB789E7170E246E00036D9E /* DBEngine.h */,
+				7CB789E8170E246E00036D9E /* DBEngine.m */,
+				7CB789EA170E248E00036D9E /* UserItem.h */,
+				7CB789EB170E248E00036D9E /* UserItem.m */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		7CB78A0D170E4C7E00036D9E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7CB78A0E170E4C9C00036D9E /* DateConverter.h */,
+				7CB78A0F170E4C9C00036D9E /* DateConverter.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +230,11 @@
 				7CB789D6170E1E4600036D9E /* Default.png in Resources */,
 				7CB789D8170E1E4600036D9E /* Default@2x.png in Resources */,
 				7CB789DA170E1E4600036D9E /* Default-568h@2x.png in Resources */,
-				7CB789E0170E1E4700036D9E /* ViewController.xib in Resources */,
+				7CB789F4170E298D00036D9E /* MainViewController.xib in Resources */,
+				7CB78A02170E329A00036D9E /* SecondViewController.xib in Resources */,
+				7CB78A07170E444200036D9E /* TextEditorViewController.xib in Resources */,
+				7CB78A0C170E446600036D9E /* DateEditorViewController.xib in Resources */,
+				7CB78A12170E618700036D9E /* database.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +247,13 @@
 			files = (
 				7CB789D0170E1E4600036D9E /* main.m in Sources */,
 				7CB789D4170E1E4600036D9E /* AppDelegate.m in Sources */,
-				7CB789DD170E1E4700036D9E /* ViewController.m in Sources */,
+				7CB789E9170E246E00036D9E /* DBEngine.m in Sources */,
+				7CB789EC170E248E00036D9E /* UserItem.m in Sources */,
+				7CB789F3170E298D00036D9E /* MainViewController.m in Sources */,
+				7CB78A01170E329A00036D9E /* SecondViewController.m in Sources */,
+				7CB78A06170E444200036D9E /* TextEditorViewController.m in Sources */,
+				7CB78A0B170E446600036D9E /* DateEditorViewController.m in Sources */,
+				7CB78A10170E4C9C00036D9E /* DateConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +266,6 @@
 				7CB789CD170E1E4600036D9E /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		7CB789DE170E1E4700036D9E /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7CB789DF170E1E4700036D9E /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -225,7 +295,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -248,7 +318,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -261,6 +331,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestApp/TestApp-Prefix.pch";
 				INFOPLIST_FILE = "TestApp/TestApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -272,6 +343,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestApp/TestApp-Prefix.pch";
 				INFOPLIST_FILE = "TestApp/TestApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -296,6 +368,7 @@
 				7CB789E5170E1E4700036D9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

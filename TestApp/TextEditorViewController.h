@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TextEditorViewController : UIViewController
+@protocol TextEditorViewControllerDelegate;
+
+@interface TextEditorViewController : UIViewController <UITextViewDelegate> {
+    IBOutlet UITextView *mTextView;
+}
+@property (nonatomic, assign) id<TextEditorViewControllerDelegate> delegate;
++ (TextEditorViewController *)textEditorWithText:(NSString *)text andTitle:(NSString *)title;
+@end
+
+@protocol TextEditorViewControllerDelegate <NSObject>
+- (void)textEditorWithText:(NSString *)text;
 
 @end

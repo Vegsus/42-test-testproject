@@ -10,4 +10,11 @@
 
 @implementation DateConverter
 
++ (NSString *)convertDateToString:(NSDate *)date withFormat:(NSString *)format {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter new] autorelease];
+    [dateFormatter setDateFormat:format];
+    return [dateFormatter stringFromDate:date];
+}
+
+
 @end

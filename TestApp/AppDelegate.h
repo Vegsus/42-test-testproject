@@ -8,12 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@class ViewController;
+@class MainViewController;
+@class SecondViewController;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate
+
+
+
+
+>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) ViewController *viewController;
+@property (strong, nonatomic) MainViewController *mainViewController;
+@property (strong, nonatomic) SecondViewController *secondViewController;
+@property (strong, nonatomic) UITabBarController *tabBarController;
 
 @end

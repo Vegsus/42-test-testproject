@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+@class UserItem;
 
 @interface DBEngine : NSObject
++ (DBEngine *)sharedInstance;
+- (UserItem *)getUser;
 
 @end

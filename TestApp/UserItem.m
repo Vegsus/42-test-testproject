@@ -10,4 +10,14 @@
 
 @implementation UserItem
 
+
+- (void)dealloc {
+    [super dealloc];
+}
+
+- (NSString *)fullName {
+    _fullName  = [NSString stringWithFormat:@"%@ %@",self.surname,self.name];
+    return _fullName;
+}
+
 @end

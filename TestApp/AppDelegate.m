@@ -7,27 +7,41 @@
 //
 
 #import "AppDelegate.h"
-
-#import "ViewController.h"
+#import "Const.h"
+#import "MainViewController.h"
+#import "SecondViewController.h"
 
 @implementation AppDelegate
 
-- (void)dealloc
-{
+- (void)dealloc {
     [_window release];
-    [_viewController release];
+    [_mainViewController release];
+    [_secondViewController release];
+    [_tabBarController release];
     [super dealloc];
 }
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
-    self.window.rootViewController = self.viewController;
-    [self.window makeKeyAndVisible];
+    [self launchTabBar];
     return YES;
 }
+
+- (void)launchTabBar {    
+    MainViewController *mainViewController = [[[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil] autorelease];
+    UIViewController *firstNavigation  = [[[UINavigationController alloc] initWithRootViewController:mainViewController] autorelease];
+    
+    SecondViewController *secondViewController = [[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] autorelease];
+    UIViewController *secondNavigation  = [[[UINavigationController alloc] initWithRootViewController:secondViewController] autorelease];
+    
+    self.tabBarController = [[[UITabBarController alloc] init] autorelease];
+    self.tabBarController.viewControllers = @[firstNavigation, secondNavigation];
+    self.tabBarController.delegate = self;
+    self.window.rootViewController = self.tabBarController;
+    [self.window makeKeyAndVisible];
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

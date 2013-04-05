@@ -6,8 +6,10 @@
 //  Copyright (c) 2013 Eugeny Vegner. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#define DATABASE_FILE       @"database.sqlite"
 
-@protocol Const <NSObject>
+#define kScreenRect         [[UIScreen mainScreen] bounds]
+#define kBorderRadius       8.0
 
-@end
+//Colors
+#define kCellBorderColor    [UIColor colorWithRed:0.67 green:0.67 blue:0.67 alpha:1.000]
